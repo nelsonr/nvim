@@ -73,6 +73,12 @@ return require("packer").startup(function(use)
     config = function() require("plugins.lualine") end,
   }
 
+  -- Highlight modified lines in a Git repo
+  use {
+    "lewis6991/gitsigns.nvim",
+    config = function() require("plugins.gitsigns") end
+  }
+
   -- Github themes
   use {
     "projekt0n/github-nvim-theme",
