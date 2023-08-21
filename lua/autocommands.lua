@@ -23,14 +23,6 @@ cmd('OpenConfig', function()
   pcall(function() vim.cmd("exec 'e ~/.config/nvim/'") end)
 end, { desc = "Open Neovim config." })
 
--- Reload Neovim config
-cmd('ReloadConfig', function()
-  pcall(function()
-    print "Config reloaded!"
-    vim.cmd("exec 'so ~/.config/nvim/init.lua'")
-  end)
-end, { desc = "Reload Neovim config." })
-
 -- Trim trailing white space
 cmd('TrimWhiteSpace', function()
   pcall(function()

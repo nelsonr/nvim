@@ -9,7 +9,7 @@ end
 bind("n", "<C-s>", ":w<CR>")
 
 -- Use "\" key to toggle file explorer
-bind("n", "\\", ":NvimTreeToggle<CR>")
+bind("n", "\\", ":NvimTreeFindFileToggle<CR>")
 
 -- Open fuzzy finder
 bind("n", "<C-p>", ":Files<CR>")
@@ -54,6 +54,5 @@ bind("v", "m", "%")
 bind("c", "<C-k>", "<C-p>")
 bind("c", "<C-j>", "<C-n>")
 
--- Open/Reload Neovim config
+-- Open Neovim config
 bind("n", "<leader>co", ":OpenConfig<CR>")
-bind("n", "<leader>cr", ":ReloadConfig<CR>")
