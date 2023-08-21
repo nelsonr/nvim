@@ -14,6 +14,9 @@ vim.o.number = true
 -- Use system clipboard
 vim.o.clipboard = "unnamedplus"
 
+-- Highlight cursor line
+vim.o.cursorline = true
+
 -- Highlight search results
 vim.o.hlsearch = true
 
