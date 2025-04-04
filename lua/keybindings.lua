@@ -1,8 +1,6 @@
 -- Util to set keybindings
-local function bind(mode, keybinding, cmd, opts)
-  local extended_opts = vim.tbl_deep_extend("force", { silent = true }, (opts or {}))
-
-  vim.keymap.set(mode, keybinding, cmd, extended_opts)
+local function bind(mode, keybinding, cmd)
+  vim.keymap.set(mode, keybinding, cmd, { noremap = true, silent = true })
 end
 
 -- Use Ctrl+S to save like a normal person

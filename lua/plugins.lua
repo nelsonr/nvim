@@ -47,7 +47,7 @@ return require("packer").startup(function(use)
   use { "junegunn/fzf", run = ":call fzf#install()" }
   use {
     "junegunn/fzf.vim",
-    config = function() require("plugins.fzf") end
+    -- config = function() require("plugins.fzf") end
   }
 
   -- File Explorer
